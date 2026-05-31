@@ -1,0 +1,39 @@
+# Restricted clinical data and local-only working data
+01_raw_data/
+02_clean_data/
+data/
+raw_data/
+private_data/
+restricted_data/
+Original/
+Publication/
+Archive/
+
+# Spreadsheets and CSVs are ignored by default to reduce accidental data leaks.
+*.xlsx
+*.xls
+*.csv
+!demo_data/
+!demo_data/simulated_alpha_gal_serology_demo.csv
+
+# Generated demo/manuscript outputs
+outputs/tables/*.csv
+outputs/figures/*.png
+outputs/figures/*.pdf
+outputs/figures/*.svg
+03_outputs/
+03_outputs_v2/
+04_powerbi/staging/
+Shared/Package v1/Figures and tables/**/Raw_data/
+
+# Python and notebook artifacts
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Local environment and OS files
+.env
+.venv/
+venv/
+.DS_Store
+Thumbs.db
